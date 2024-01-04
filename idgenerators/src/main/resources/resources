@@ -1,0 +1,15 @@
+use mydb
+
+create table employee(
+id int PRIMARY KEY AUTO_INCREMENT,
+name varchar(20)
+)
+
+drop table employee
+create table employee(
+id int PRIMARY KEY ,
+name varchar(20)
+)
+create table id_generation(gen_name varchar(60) PRIMARY KEY,
+					gen_value int(20)
+                    );
