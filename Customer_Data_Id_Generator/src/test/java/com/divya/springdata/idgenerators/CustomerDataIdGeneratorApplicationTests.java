@@ -17,7 +17,7 @@ class CustomerDataIdGeneratorApplicationTests {
 	void contextLoads() {
 	}
 
-	
+	//Manual ID Insertion
 	@Test
 	public void test_CreateData_Manual_ID()
 	{
@@ -27,5 +27,16 @@ class CustomerDataIdGeneratorApplicationTests {
 		cust.setMail("thankgod@gmail.com");
 		repo.save(cust);
 		
+	}
+	
+	//With Generation Type Auto ID Insertion
+	
+	@Test
+	public void test_Createdata_AutoID()
+	{
+		Customer cust=new Customer();
+		cust.setName("Ram");
+		cust.setMail("ram@gmail.com");
+		repo.save(cust);
 	}
 }

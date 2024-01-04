@@ -1,0 +1,13 @@
+For Manual ID Insertion :
+
+create table customer(
+id int 
+name varchar(20), email varchar(30)
+);
+
+For GenerationType.AUTO: 
+
+create table customer(
+id int PRIMARY KEY AUTO_INCREMENT,
+name varchar(20), email varchar(30)
+);
